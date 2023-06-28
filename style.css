@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e6e6fa;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: #25cf3f;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.scoreboard > div {
+  font-size: 2rem;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border: 2px solid #4725cf;
+  border-radius: 10px;
+  color: #4725cf;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.choice {
+  border: 2px solid #4725cf;
+  border-radius: 10px;
+  margin: 0 2rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+}
+
+.choice:active {
+  transform: scale(0.9);
+}
+
+.choice i {
+  color: #f045a9;
+  font-size: 50px;
+}
+
+.result {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #4725cf;
+}
+
+#computer-choice {
+  text-align: center;
+  font-size: 2rem;
+  color: #4725cf;
+}
+
+.play-again {
+  display: block;
+  margin: 3rem auto 1rem auto;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #f2e342;
+  color: #0c0c0c;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.play-again:hover {
+  background-color: #993366;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: block;
+  z-index: 100;
+  transition: all 250ms linear;
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+.play-again:active {
+  transform: scale(0.9);
+}

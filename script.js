@@ -93,5 +93,15 @@ function enableOptions() {
   });
 }
 
+const clickSound = new Audio(
+  "./Cartoon Weird Noise Short Mouth Popping 02.mp3"
+);
+
+function playClickSound() {
+  clickSound.play();
+}
+
 choices.forEach((choice) => choice.addEventListener("click", selectWeapon));
+choices.forEach((choice) => choice.addEventListener("click", playClickSound));
+
 playAgainBtn.addEventListener("click", resetGame);

@@ -48,6 +48,7 @@ function updateScore(playerWeapon, computerWeapon) {
       resultElem.style.color = "green";
       computerChoiceElem.innerHTML = "Game Over";
       disableOptions();
+      clickSoundWin.play();
     }
 
     if (computerScore === 5) {
@@ -96,7 +97,9 @@ function enableOptions() {
 const clickSound = new Audio(
   "./Cartoon Weird Noise Short Mouth Popping 02.mp3"
 );
-
+const clickSoundWin = new Audio(
+  "./Audience Clapping - Sound Effect  מחיאת כפיים.mp3"
+);
 function playClickSound() {
   clickSound.play();
 }

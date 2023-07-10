@@ -111,3 +111,51 @@ h1 {
 .play-again:active {
   transform: scale(0.9);
 }
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 40px;
+  }
+
+  .sidebar {
+    width: 300px;
+    float: left;
+  }
+
+  .content {
+    width: calc(100% - 320px);
+    float: right;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+    float: none;
+  }
+
+  .content {
+    width: 100%;
+    float: none;
+  }
+}
